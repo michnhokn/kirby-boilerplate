@@ -1,0 +1,14 @@
+{
+  "name": "michnhokn/kirby3-boilerplate",
+  "type": "project",
+  "require": {
+    "getkirby/cms": "^3.6",
+    "arnoson/kirby-vite": "^3.0.0",
+    "getkirby/layouts": "^1.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  }
+}

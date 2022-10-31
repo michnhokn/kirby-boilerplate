@@ -1,0 +1,32 @@
+.DS_Store
+/.idea
+node_modules/
+
+# Frontend
+/public/assets/
+/public/dist/
+
+# Kirby
+.dev
+kirby
+vendor
+
+site/plugins/*
+!site/plugins/custom
+
+/public/media/*
+!/public/media/.gitkeep
+
+/storage/accounts/*
+!/storage/accounts/.gitkeep
+
+/storage/cache/*
+!/storage/cache/.gitkeep
+
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+/storage/sessions/*
+!/storage/sessions/.gitkeep
+
+/site/config/.license
