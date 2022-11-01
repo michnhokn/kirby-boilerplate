@@ -1,14 +1,23 @@
 {
   "name": "michnhokn/kirby3-boilerplate",
+  "description": "Kirby3 Boilerplate with Vite",
+  "version": "1.0.1",
   "type": "project",
+  "license": "MIT",
   "require": {
     "getkirby/cms": "^3.6",
     "arnoson/kirby-vite": "^3.0.0",
-    "getkirby/layouts": "^1.0"
+    "getkirby/layouts": "^1.0",
+    "getkirby/cli": "^1.0"
   },
   "config": {
     "allow-plugins": {
       "getkirby/composer-installer": true
     }
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "kirby setup"
+    ]
   }
 }
