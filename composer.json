@@ -1,7 +1,7 @@
 {
   "name": "michnhokn/kirby3-boilerplate",
   "description": "Kirby3 Boilerplate with Vite",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "project",
   "license": "MIT",
   "require": {
