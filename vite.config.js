@@ -1,9 +1,7 @@
 import kirby from 'vite-plugin-kirby';
-import fs from 'fs';
-import {homedir} from 'os';
 import {resolve} from 'path';
 
-let host = 'michael-scheurich.test';
+const host = 'localhost';
 
 export default ({mode}) => ({
   root: 'src',
@@ -15,30 +13,10 @@ export default ({mode}) => ({
     rollupOptions: {input: resolve(process.cwd(), 'src/index.js')},
   },
 
-  server: detectServerConfig(host),
-
-  plugins: [kirby()],
-})
-
-function detectServerConfig(host) {
-  let keyPath = resolve(homedir(), `.config/valet/Certificates/${host}.key`);
-  let certificatePath = resolve(homedir(),
-      `.config/valet/Certificates/${host}.crt`);
-
-  if (!fs.existsSync(keyPath)) {
-    return {};
-  }
-
-  if (!fs.existsSync(certificatePath)) {
-    return {};
-  }
-
-  return {
+  server: {
     hmr: {host},
     host,
-    https: {
-      key: fs.readFileSync(keyPath),
-      cert: fs.readFileSync(certificatePath),
-    },
-  };
-}
+  },
+
+  plugins: [kirby()],
+});
