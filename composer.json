@@ -1,11 +1,12 @@
 {
   "name": "michnhokn/kirby3-boilerplate",
   "description": "Kirby3 Boilerplate with Vite",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "project",
   "license": "MIT",
   "require": {
-    "getkirby/cms": "^3.6",
+    "php": ">=8.0.0 <8.3.0",
+    "getkirby/cms": "^3.9",
     "arnoson/kirby-vite": "^3.0.0",
     "getkirby/layouts": "^1.0",
     "getkirby/cli": "^1.0"
