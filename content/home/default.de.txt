@@ -1,0 +1,9 @@
+Title: Home
+
+----
+
+Text: <p>Dear developer,</p><p>Welcome to the Kirby Boilerplate by <a href="https://github.com/michnhokn/kirby3-boilerplate" target="_blank">michnhokn</a>.</p>
+
+----
+
+Uuid: Pl5SefBwEp1UH6kP

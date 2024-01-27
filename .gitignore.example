@@ -3,6 +3,8 @@
 node_modules
 .devenv*
 devenv.local.nix
+/content
+/*.yaml
 
 # Frontend
 /public/assets/
@@ -30,3 +32,8 @@ site/plugins/*
 
 /storage/sessions/*
 !/storage/sessions/.gitkeep
+
+/site/config/*
+!/site/config/config.php
+!/site/config/config.localhost.php
+!/site/config/vite.config.php

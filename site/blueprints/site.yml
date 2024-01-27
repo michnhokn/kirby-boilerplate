@@ -1,0 +1,10 @@
+tabs:
+  structure:
+    label: Structure
+    icon: grid
+    sections:
+      pages:
+        type: pages
+        status: all
+
+  meta: tabs/meta/site

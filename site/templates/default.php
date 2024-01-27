@@ -1,5 +1,5 @@
-<?php layout() ?>
+<?php snippet('layouts/default', slots: true) ?>
 
-<main class="default">
-    <h1><?= h($page->title()) ?></h1>
-</main>
+<?= $page->text() ?>
+
+<?php endsnippet() ?>

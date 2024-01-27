@@ -13,7 +13,7 @@
 
   languages.php = {
     enable = lib.mkDefault true;
-    version = lib.mkDefault "8.1";
+    version = lib.mkDefault "8.2";
 
     extensions = [];
 
