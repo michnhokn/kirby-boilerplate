@@ -23,5 +23,8 @@
     "post-create-project-cmd": [
       "kirby setup"
     ]
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^7.0"
   }
 }
