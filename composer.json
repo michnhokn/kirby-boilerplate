@@ -11,7 +11,6 @@
     "getkirby/cli": "^1.0",
     "fabianmichael/kirby-meta": "^1.0",
     "distantnative/retour-for-kirby": "^5.0",
-    "bnomei/kirby3-monolog": "^2.0",
     "bnomei/kirby3-janitor": "^4.0"
   },
   "config": {
