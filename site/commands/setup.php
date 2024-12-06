@@ -1,5 +1,9 @@
 <?php
 
+use Kirby\Cms\App;
+use Kirby\Filesystem\F;
+use Kirby\Toolkit\Str;
+
 return [
     'description' => 'Boilerplate Setup',
     'args' => [],
@@ -18,6 +22,16 @@ return [
 
             if (shell_exec($connectCommand) !== null) {
                 $cli->success("Added origin for git repository!");
+            }
+
+            $envPath = App::instance()->root('config') . "/env.php.example";
+            if (F::exists($envPath)) {
+                F::move($envPath, Str::rtrim($envPath, ".example"), true);
+            }
+
+            $envPath = App::instance()->root('base') . "/.gitignore.example";
+            if (F::exists($envPath)) {
+                F::move($envPath, Str::rtrim($envPath, ".example"), true);
             }
 
             $cli->success("Done!");

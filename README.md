@@ -10,11 +10,10 @@
 
 ## Installation
 
-1. Install the project with all dependencies and init a git repository
-    ```
-    composer create-project michnhokn/kirby3-boilerplate <project-name>
-    ```
-2. Change the `composer.json` to the project needs
-3. Change `site/config/env.php` to the project needs
-4. Copy `.gitignore.example` to `.gitignore`
-5. Start the environment `devenv up` & `devenv shell` and enjoy programming
+```
+composer create-project michnhokn/kirby3-boilerplate <project-name>
+cd <project-name>
+devenv up & devenv shell
+composer install
+vendor/bin/kirby setup
+```

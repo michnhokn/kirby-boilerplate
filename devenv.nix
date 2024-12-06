@@ -3,31 +3,28 @@
 {
   packages = [
     pkgs.jq
+    pkgs.git
     pkgs.gnupatch
   ];
 
   languages.javascript = {
     enable = lib.mkDefault true;
-    package = lib.mkDefault pkgs.nodejs-16_x;
+    package = lib.mkDefault pkgs.nodejs_22;
   };
 
   languages.php = {
     enable = lib.mkDefault true;
-    version = lib.mkDefault "8.2";
+    version = lib.mkDefault "8.3";
 
     extensions = [];
 
     ini = ''
-      memory_limit = 2G
-      upload_max_filesize = 100M
-      post_max_size = 100M
-      max_execution_time = 120
+      memory_limit = 256M
+      upload_max_filesize = 500M
+      post_max_size = 500M
+      max_execution_time = 300
       realpath_cache_ttl = 3600J
       session.gc_probability = 0
-      ${lib.optionalString config.services.redis.enable ''
-      session.save_handler = redis
-      session.save_path = "tcp://127.0.0.1:6379/0"
-      ''}
       display_errors = On
       error_reporting = E_ALL
       assert.active = 0
