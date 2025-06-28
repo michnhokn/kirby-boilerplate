@@ -12,6 +12,7 @@ devenv.local.nix
 .dev
 kirby
 vendor
+site/config/env.php
 
 site/plugins/*
 !site/plugins/custom

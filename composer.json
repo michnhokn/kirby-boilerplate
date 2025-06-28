@@ -1,17 +1,17 @@
 {
   "name": "michnhokn/kirby3-boilerplate",
   "description": "Kirby Boilerplate with Vite",
-  "version": "2.0.0",
+  "version": "5.0.0",
   "type": "project",
   "license": "MIT",
   "require": {
     "php": ">=8.3.0 <8.4.0",
-    "getkirby/cms": "^4.0",
-    "arnoson/kirby-vite": "^5.0",
-    "getkirby/cli": "^1.0",
-    "tobimori/kirby-seo": "^1.0",
-    "distantnative/retour-for-kirby": "^5.0",
-    "bnomei/kirby3-janitor": "^4.0"
+    "getkirby/cms": "5.0.0",
+    "arnoson/kirby-vite": "5.6.0",
+    "getkirby/cli": "1.6.0",
+    "tobimori/kirby-seo": "2.0.0-alpha.3",
+    "distantnative/retour-for-kirby": "5.5.0",
+    "bnomei/kirby3-janitor": "5.2.0"
   },
   "config": {
     "allow-plugins": {

@@ -27,7 +27,6 @@
       session.gc_probability = 0
       display_errors = On
       error_reporting = E_ALL
-      assert.active = 0
       opcache.memory_consumption = 256M
       opcache.interned_strings_buffer = 20
       zend.assertions = 0

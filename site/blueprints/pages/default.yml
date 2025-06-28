@@ -23,4 +23,4 @@ tabs:
           files:
             type: files
 
-  meta: tabs/meta/page
+  seo: seo/page

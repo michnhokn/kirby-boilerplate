@@ -7,4 +7,4 @@ tabs:
         type: pages
         status: all
 
-  meta: tabs/meta/site
+  seo: seo/site

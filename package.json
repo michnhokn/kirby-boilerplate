@@ -1,16 +1,7 @@
 {
   "main": "src/index.js",
-  "description": "Kirby3 Boilerplate with Vite",
   "version": "1.0.0",
   "type": "module",
-  "authors": [
-    {
-      "name": "Michael Scheurich",
-      "email": "hello@michaelscheurich.dev",
-      "homepage": "https://www.michaelscheurich.dev",
-      "role": "Maintainer"
-    }
-  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build"
@@ -18,6 +9,6 @@
   "devDependencies": {
     "concurrently": "^7.1.0",
     "sass": "^1.55.0",
-    "vite-plugin-kirby": "^5.0"
+    "vite-plugin-kirby": "5.6.0"
   }
 }
